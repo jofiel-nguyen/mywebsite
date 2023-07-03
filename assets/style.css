@@ -15,7 +15,7 @@
   }
   
   #nav {
-    /* Add any necessary styling for the navigation container */
+    display: inline-block; /* Add this to make the nav container inline */
   }
   
   #nav li {
@@ -36,12 +36,16 @@
     background-color: #ccc;
   }
   
+  #nav .nav-arrow-down {
+    font-size: 16px;
+  }
+  
   #nav .subnav {
     display: none;
     position: absolute;
     top: 100%;
     min-width: 160px;
-    box-shadow: 0 0 10px rgba(red, green, blue, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Updated box-shadow property */
   }
   
   #nav .subnav li {
@@ -60,8 +64,6 @@
     background-color: #999;
   }
   
-  
-  
   #nav li:hover .subnav {
     display: block; /* Show subnav on hover */
   }
@@ -77,5 +79,26 @@
   
   #footer {
     /* Add any necessary styling for the footer */
+  }
+  
+  .search-btn {
+    display: inline-block; /* Add this to make the search button inline */
+    vertical-align: middle; /* Add this to vertically align the search button */
+    margin-left: 10px; /* Add any necessary margin to separate the search button from the navigation */
+  }
+  
+  #search-input {
+    padding: 4px;
+  }
+  
+  #search-button {
+    padding: 4px 8px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #search-button i {
+    color: #000;
   }
   
