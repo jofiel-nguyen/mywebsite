@@ -1,0 +1,81 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #header {
+    height: 46px;
+    background-color: #000;
+  }
+  
+  #nav {
+    /* Add any necessary styling for the navigation container */
+  }
+  
+  #nav li {
+    display: inline-block;
+    position: relative; /* Add this to allow absolute positioning for subnav */
+  }
+  
+  #nav > li > a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+  }
+  
+  #nav li:hover a {
+    color: #000;
+    background-color: #ccc;
+  }
+  
+  #nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(red, green, blue, 0.3);
+  }
+  
+  #nav .subnav li {
+    display: block;
+  }
+  
+  #nav .subnav a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #ccc;
+  }
+  
+  #nav .subnav a:hover {
+    background-color: #999;
+  }
+  
+  
+  
+  #nav li:hover .subnav {
+    display: block; /* Show subnav on hover */
+  }
+  
+  #slider {
+    min-height: 500px;
+    background-color: #333;
+  }
+  
+  #content {
+    /* Add any necessary styling for the content area */
+  }
+  
+  #footer {
+    /* Add any necessary styling for the footer */
+  }
+  
